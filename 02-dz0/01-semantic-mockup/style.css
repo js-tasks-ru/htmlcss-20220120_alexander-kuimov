@@ -1,0 +1,30 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: red;
+}
+
+nav {
+    background: orange;
+}
+
+main {
+    background: green;
+}
+
+article {
+    background: darkblue;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: purple;
+}
+
+.block {
+    padding: 10px;
+}
