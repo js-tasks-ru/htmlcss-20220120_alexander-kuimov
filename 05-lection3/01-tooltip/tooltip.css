@@ -8,7 +8,6 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
-    stroke: var(--black);
 }
 
 .tooltip__icon:hover + .tooltip__content {
