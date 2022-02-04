@@ -19,7 +19,6 @@
     top: 12px;
     right: 12px;
     cursor: pointer;
-    fill: var(--black);
     width: 16px;
     height: 16px;
 }
@@ -27,12 +26,14 @@
 .modal__title {
     display: flex;
     width: 100%;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 16px;
     margin: 0 0 14px;
 }
 
 .modal__content {
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
