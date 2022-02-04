@@ -16,6 +16,7 @@
 }
 
 .histogram__header-title {
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: var(--black);
@@ -31,6 +32,7 @@
 }
 
 .histogram__header-link {
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: var(--dark-blue);
@@ -40,8 +42,7 @@
     display: flex;
     width: 100%;
     margin: 39px 0 0;
-    align-items: baseline;
-    justify-content: space-between;
+    align-items: flex-end;
     gap: 1px;
 }
 
