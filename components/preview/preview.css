@@ -1,0 +1,27 @@
+.preview {
+    padding-top: 68px;
+    padding-bottom: 204px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.preview__item {
+    height: 367px;
+    background: var(--white);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.preview__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 30px;
+}

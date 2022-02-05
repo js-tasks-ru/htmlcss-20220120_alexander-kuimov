@@ -1,0 +1,7 @@
+.page {
+    display: grid;
+    grid-template-rows: 256px 1fr 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer"
+}
