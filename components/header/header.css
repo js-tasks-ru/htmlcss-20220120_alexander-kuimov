@@ -1,7 +1,14 @@
 .header {
-    padding: 96px 0;
+    padding: 65px 0;
     background: var(--white);
     grid-area: header;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .header__title {
@@ -12,6 +19,12 @@
     line-height: 64px;
     color: var(--black);
     margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .header__logo {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 480px) {
