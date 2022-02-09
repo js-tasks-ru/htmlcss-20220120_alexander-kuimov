@@ -5,3 +5,7 @@
                          "main"
                          "footer"
 }
+
+.page-component {
+    grid-template-rows: 82px 1fr 50px;
+}

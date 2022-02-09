@@ -1,0 +1,46 @@
+.sidebar {
+    width: 229px;
+    margin-right: 56px;
+}
+
+.sidebar h4 {
+    font-family: Inter, 'sans-serif';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.sidebar a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: var(--notificaiton);
+}
+
+.sidebar__menu {
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+
+.sidebar__menu__item {
+    font-family: Inter, 'sans-serif';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.sidebar__menu__item-active a {
+    color: var(--notificaiton);
+}
+
+.sidebar__link {
+    font-family: Inter, 'sans-serif';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}

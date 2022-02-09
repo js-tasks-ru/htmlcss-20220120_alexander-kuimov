@@ -28,3 +28,18 @@
     color: var(--black);
     max-width: 640px;
 }
+
+.footer h5 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}
+
+.page-component .footer {
+    background: var(--grey-5);
+    padding: 56px 0;
+}
