@@ -25,6 +25,8 @@
     --primary-btn-hover: var(--dark-blue);
     --secondary: var(--purple);
     --secondary-btn-hover: var(--dark-purple);
+
+    --notificaiton: #D84910;
 }
 
 * {
