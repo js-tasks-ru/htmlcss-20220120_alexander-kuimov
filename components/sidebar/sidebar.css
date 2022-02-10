@@ -3,7 +3,7 @@
     margin-right: 56px;
 }
 
-.sidebar h4 {
+.sidebar__title {
     font-family: Inter, 'sans-serif';
     font-style: normal;
     font-size: 20px;
@@ -12,12 +12,16 @@
     color: var(--black);
 }
 
-.sidebar a {
+.sidebar__link {
+    font-family: Inter, 'sans-serif';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
     color: var(--black);
     text-decoration: none;
 }
 
-.sidebar a:hover {
+.sidebar__link:hover {
     color: var(--notificaiton);
 }
 
@@ -26,7 +30,7 @@
     margin-bottom: 26px;
 }
 
-.sidebar__menu__item {
+.sidebar__menu-item {
     font-family: Inter, 'sans-serif';
     font-size: 14px;
     line-height: 22px;
@@ -34,13 +38,6 @@
     margin-bottom: 4px;
 }
 
-.sidebar__menu__item-active a {
+.sidebar__menu-item_active .sidebar__link {
     color: var(--notificaiton);
-}
-
-.sidebar__link {
-    font-family: Inter, 'sans-serif';
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
 }
