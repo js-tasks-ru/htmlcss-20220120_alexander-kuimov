@@ -1,6 +1,7 @@
 .toggler-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 16px;
+    flex-direction: column;
 }
 
 .toggler {
