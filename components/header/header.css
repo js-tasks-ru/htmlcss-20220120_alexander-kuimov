@@ -21,6 +21,10 @@
     margin: 0;
 }
 
+.header-small {
+    padding: 25px 0;
+}
+
 @media screen and (max-width: 991px) {
     .header__logo {
         justify-content: center;
