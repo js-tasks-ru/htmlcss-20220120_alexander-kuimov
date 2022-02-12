@@ -1,13 +1,6 @@
-.toggler-wrapper {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-}
-
 .toggler {
     display: inline-flex;
     align-items: center;
-    color: var(--grey-4);
 }
 
 .toggler__point {
@@ -67,4 +60,11 @@
     position: absolute;
     clip: rect(0, 0, 0, 0);
     opacity: 0;
+}
+
+.toggler__label {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-4);
 }
