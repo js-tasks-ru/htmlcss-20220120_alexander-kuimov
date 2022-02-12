@@ -1,8 +1,3 @@
-.fields {
-    display: flex;
-    flex-direction: column;
-}
-
 .field__wrapper {
     display: inline-flex;
     flex-wrap: wrap;
