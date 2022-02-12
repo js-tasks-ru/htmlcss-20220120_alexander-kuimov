@@ -1,17 +1,7 @@
-.radio-wrapper {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-}
-
 .radio-btn {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--grey-4);
 }
 
 .radio-btn__item {
@@ -79,4 +69,11 @@
 
 .radio-btn__input:disabled ~ .radio-btn__item:after {
     display: none;
+}
+
+.radio-btn__label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey-4);
 }
