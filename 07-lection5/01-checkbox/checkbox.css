@@ -1,17 +1,7 @@
-.checkbox-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 .checkbox {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--grey-4);
 }
 
 .checkbox__item {
@@ -55,4 +45,11 @@
 
 .checkbox__input:disabled:focus ~.checkbox__label {
     border: none;
+}
+
+.checkbox__label {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-4);
 }
