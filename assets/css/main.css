@@ -27,6 +27,8 @@
     --secondary-btn-hover: var(--dark-purple);
 
     --notificaiton: #D84910;
+
+    --burger: rgba(249, 250, 252, 1);
 }
 
 * {

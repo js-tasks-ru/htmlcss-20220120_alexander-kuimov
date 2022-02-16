@@ -1,0 +1,44 @@
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .menu {
+        display: block;
+        width: 229px;
+        color: var(--black);
+    }
+
+    .menu__title {
+        margin: 0;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .menu__body {
+        margin: 0;
+        padding: 16px 0;
+    }
+
+    .menu__item {
+        list-style-type: none;
+
+        font-size: 14px;
+        line-height: 22px;
+
+        margin: 4px 0;
+    }
+
+    .menu__item-link {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .menu__item-link:hover {
+        color: var(--notificaiton);
+    }
+
+    .menu__item:last-child {
+        padding-top: 30px;
+    }
+}
