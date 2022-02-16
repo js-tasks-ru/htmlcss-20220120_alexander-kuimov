@@ -25,9 +25,24 @@
     padding: 25px 0;
 }
 
+.header__burger-menu {
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    display: none;
+}
+
+.header__burger-menu-icon {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 991px) {
     .header__logo {
         justify-content: center;
+    }
+
+    .header__burger-menu {
+        display: block;
     }
 }
 
