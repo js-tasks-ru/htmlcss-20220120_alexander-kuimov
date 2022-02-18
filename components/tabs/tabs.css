@@ -5,13 +5,13 @@
 }
 
 .tabs__scroller {
-    background-color: var(--white);
+    background-color: var(--main-bg);
     border-bottom: 1px solid var(--grey-2);
     padding: 12px 28px;
 }
 
 .tabs__scroller-item {
-    color: var(--grey-3);
+    color: var(--font-color);
     padding: 0 0 10px;
     margin: 0 20px;
     box-sizing: border-box;
@@ -30,8 +30,8 @@
 #all-tab:checked ~ .tabs__scroller >  .content-wrapper > .tabs__scroller-item[for="all-tab"],
 #complex-tab:checked ~ .tabs__scroller > .content-wrapper > .tabs__scroller-item[for="complex-tab"],
 #simple-tab:checked ~ .tabs__scroller > .content-wrapper > .tabs__scroller-item[for="simple-tab"] {
-    color: var(--black);
-    border-bottom: 5px solid var(--black);
+    color: var(--dark-bg);
+    border-bottom: 5px solid var(--dark-bg);
 }
 
 #all-tab:checked ~ .tabs__scroller ~ .tabs__content_all,
@@ -42,7 +42,7 @@
 
 .tabs__content {
     display: none;
-    background-color: var(--grey-5);
+    background-color: var(--light-bg);
 }
 
 

@@ -9,10 +9,12 @@
 
 .preview__item {
     height: 367px;
-    background: var(--white);
+    background: var(--main-bg);
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    box-shadow: 0 2px 4px rgb(33 36 41 / 5%);
+    border-radius: 0.75rem;
 }
 
 .preview__title {
@@ -22,7 +24,7 @@
     font-size: 21px;
     line-height: 25px;
     text-align: center;
-    color: var(--black);
+    color: var(--font-color);
     margin-bottom: 30px;
 }
 
