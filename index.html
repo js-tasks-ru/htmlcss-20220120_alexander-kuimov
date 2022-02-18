@@ -11,15 +11,39 @@
         <link rel="stylesheet" href="./components/tabs/tabs.css">
         <link rel="stylesheet" href="./components/preview/preview.css">
         <link rel="stylesheet" href="./components/footer/footer.css">
+        <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="page">
         <header class="header">
             <div class="container">
-                <div class="header__logo">
-                    <img src="./assets/images/logo.svg" alt="Site Logo">
+                <div class="header__inner">
+                    <div class="header__inner__item">
+                        <svg class="header__logo">
+                            <use href="../assets/images/sprite.svg#logo"> </use>
+                        </svg>
+                        <h1 class="header__title">Reusable component library</h1>
+                    </div>
+                    <div class="header__inner__item">
+                        <div class="header__checkbox">
+                            <label class="toggler">
+                                <span class="toggler__label">
+                                    <svg class="header__checkbox-icon">
+                                        <use href="../assets/images/sprite.svg#light-theme-icon"> </use>
+                                    </svg>
+                                </span>
+                                <input type="checkbox" id="theme-changer" class="toggler__input-hidden" tabindex="1">
+                                <span class="toggler__point"></span>
+                                <span class="toggler__label">
+                                    <svg class="header__checkbox-icon">
+                                        <use href="../assets/images/sprite.svg#dark-theme-icon"> </use>
+                                    </svg>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <h1 class="header__title">Reusable component library</h1>
             </div>
         </header>
 
@@ -98,5 +122,6 @@
                 </p>
             </div>
         </footer>
+        <script src="./10-lection8/01-theme-changer/theme-changer.js"></script>
     </body>
 </html>

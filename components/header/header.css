@@ -1,14 +1,20 @@
 .header {
     padding: 65px 0;
-    background: var(--white);
+    background: var(--main-bg);
     grid-area: header;
 }
 
-.header__logo {
+.header__inner {
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-bottom: 20px;
+    stroke: var(--grey-4);
+    fill: var(--dark-bg);
+    height: 45px;
+    max-width: 110px;
 }
 
 .header__title {
@@ -17,7 +23,7 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: var(--black);
+    color: var(--font-color);
     margin: 0;
 }
 
@@ -36,6 +42,12 @@
     cursor: pointer;
 }
 
+.header__checkbox-icon {
+    width: 25px;
+    height: 25px;
+    fill: var(--main-bg);
+}
+
 @media screen and (max-width: 991px) {
     .header__logo {
         justify-content: center;
@@ -43,6 +55,14 @@
 
     .header__burger-menu {
         display: block;
+    }
+
+    .header__checkbox {
+        display: none;
+    }
+
+    .header__inner {
+        justify-content: center;
     }
 }
 

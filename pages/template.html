@@ -15,24 +15,45 @@
     <link rel="stylesheet" href="../components/menu/menu.css">
     <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
-    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
 
+    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page page-component">
     <header class="header header-small">
         <div class="container">
-            <div class="header__logo">
-                <img src="../assets/images/logo.svg" alt="Site Logo">
-            </div>
 
-            <div class='header__burger-menu' id='burger-menu-open'>
-                <svg class='header__burger-menu-icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <div class="header__inner">
+                <svg class="header__logo">
+                    <use href="../assets/images/sprite.svg#logo"> </use>
                 </svg>
+
+                <div class='header__burger-menu' id='burger-menu-open'>
+                    <svg class='header__burger-menu-icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <div class="header__checkbox">
+                    <label class="toggler">
+                                    <span class="toggler__label">
+                                        <svg class="header__checkbox-icon">
+                                            <use href="../assets/images/sprite.svg#light-theme-icon"> </use>
+                                        </svg>
+                                    </span>
+                        <input type="checkbox" id="theme-changer" class="toggler__input-hidden" tabindex="1">
+                        <span class="toggler__point"></span>
+                        <span class="toggler__label">
+                                        <svg class="header__checkbox-icon">
+                                            <use href="../assets/images/sprite.svg#dark-theme-icon"> </use>
+                                        </svg>
+                                    </span>
+                    </label>
+                </div>
             </div>
         </div>
     </header>
@@ -128,5 +149,6 @@
             <h5 class="footer__text">Reusable component library</h5>
         </div>
     </footer>
+    <script src="../10-lection8/01-theme-changer/theme-changer.js"></script>
 </body>
 </html>

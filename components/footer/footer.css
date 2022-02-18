@@ -5,6 +5,7 @@
     align-items: center;
     padding-top: 71px;
     padding-bottom: 136px;
+    background: var(--main-bg);
 }
 
 .footer__title {
@@ -13,7 +14,7 @@
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
-    color: var(--black);
+    color: var(--font-color);
     text-align: center;
     margin-bottom: 32px;
 }
@@ -25,7 +26,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: var(--black);
+    color: var(--font-color);
     max-width: 640px;
 }
 
@@ -40,7 +41,7 @@
 }
 
 .footer_background_grey {
-    background: var(--grey-5);
+    background: var(--light-bg);
 }
 
 .footer_small {
