@@ -23,9 +23,9 @@
     border-radius: 50%;
     background-color: var(--grey-2);
     position: absolute;
-    top: 50%;
-    left: 2px;
-    transform: translateY(-50%);
+    top: 1px;
+    transform: translateX(0px);
+    transition: .2s linear;
 }
 
 .toggler__label {
@@ -38,8 +38,8 @@
 
 .toggler__input-hidden:checked ~ .toggler__point:after {
     background-color: var(--white);
-    left: initial;
-    right: 2px;
+    transform: translateX(22px);
+    transition: .2s linear;
 }
 
 .toggler__input-hidden:checked:focus ~ .toggler__label,

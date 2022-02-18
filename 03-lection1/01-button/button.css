@@ -8,8 +8,13 @@
     box-shadow: none;
     font: 500 16px/18px 'Roboto', sans-serif;
     cursor: pointer;
-    transition: opacity 200ms ease-in-out;
     border: 1px solid;
+    transform: translateY(0px);
+    transition: .2s linear;
+}
+
+.button:active {
+    transform: translateY(8px);
 }
 
 .button_type_primary {
