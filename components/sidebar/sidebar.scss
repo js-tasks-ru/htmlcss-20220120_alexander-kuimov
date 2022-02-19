@@ -1,0 +1,48 @@
+.sidebar {
+    width: 285px;
+
+    &__title {
+        font-family: Inter, 'sans-serif';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 400;
+        color: var(--font-color);
+    }
+
+    &__link {
+        font-family: Inter, 'sans-serif';
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        color: var(--font-color);
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: var(--notificaiton);
+    }
+
+    &__menu {
+        margin-top: 16px;
+        margin-bottom: 26px;
+    }
+
+    &__menu-item {
+        font-family: Inter, 'sans-serif';
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+
+    &__menu-item_active &__link {
+        color: var(--notificaiton);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+}

@@ -1,0 +1,80 @@
+.radio-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background-color: var(--white);
+        border: 1px solid var(--grey-2);
+        box-sizing: border-box;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__input {
+        position: absolute;
+        clip: rect(0,0,0,0);
+        opacity: 0;
+    }
+
+    &__input:focus ~ &__item {
+        border: 2px solid var(--blue);
+    }
+
+    &__input:focus ~ &__label {
+        border-bottom: 2px solid var(--blue);
+    }
+
+    &__input:checked ~ &__item {
+        border: 2px solid var(--blue);
+    }
+
+    &__input:checked ~ &__item:after {
+        content: "";
+        width: 18px;
+        height: 18px;
+        background-color: var(--blue);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    &__input:checked:focus ~ &__label {
+        border: none;
+    }
+
+    &__input:disabled ~ &__item {
+        background-color: var(--grey-2);
+        color: var(--grey-2);
+        border: none;
+        cursor: not-allowed;
+    }
+
+    &__input:disabled ~ &__label {
+        color: var(--grey-2);
+    }
+
+    &__input:disabled:focus ~ &__label {
+        border: none;
+    }
+
+    &__input:disabled ~ &__item:after {
+        display: none;
+    }
+
+    &__label {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--grey-4);
+    }
+
+}

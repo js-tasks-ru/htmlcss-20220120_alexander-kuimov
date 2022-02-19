@@ -1,0 +1,87 @@
+.header {
+    padding: 65px 0;
+    background: var(--main-bg);
+    grid-area: header;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+        stroke: var(--grey-4);
+        fill: var(--dark-bg);
+        height: 45px;
+        max-width: 110px;
+    }
+
+    &__title {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 64px;
+        color: var(--font-color);
+        margin: 0;
+    }
+
+    &__burger-menu {
+        position: absolute;
+        top: 20px;
+        left: 19px;
+        display: none;
+    }
+
+    &__burger-menu-icon {
+        cursor: pointer;
+    }
+
+    &__checkbox-icon {
+        width: 25px;
+        height: 25px;
+        fill: var(--main-bg);
+    }
+}
+
+.header-small {
+    padding: 25px 0;
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        &__logo {
+            justify-content: center;
+        }
+
+        &__burger-menu {
+            display: block;
+        }
+
+        &__checkbox {
+            display: none;
+        }
+
+        &__inner {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        &__title {
+            font-size: 40px;
+            line-height: 54px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header {
+        &__title {
+            font-size: 30px;
+            line-height: 44px;
+        }
+    }
+}
