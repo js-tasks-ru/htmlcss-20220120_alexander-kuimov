@@ -1,0 +1,42 @@
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .menu {
+        display: block;
+        width: 229px;
+        color: var(--black);
+
+        &__title {
+            margin: 0;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        &__body {
+            margin: 0;
+            padding: 16px 0;
+        }
+
+        &__item {
+            list-style-type: none;
+            font-size: 14px;
+            line-height: 22px;
+            margin: 4px 0;
+        }
+
+        &__item-link {
+            text-decoration: none;
+            color: var(--black);
+        }
+
+        &__item-link:hover {
+            color: var(--notificaiton);
+        }
+
+        &__item:last-child {
+            padding-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.field {
+    &__wrapper {
+        display: inline-flex;
+        flex-wrap: wrap;
+        max-width: 350px;
+        position: relative;
+    }
+
+    &__input {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        background-color: var(--white);
+        border: 1px solid var(--grey-2);
+        border-radius: 8px;
+        padding: 17px 17px 13px 24px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--grey-4);
+        transition: .2s linear;
+    }
+
+    &__input::placeholder {
+        color: var(--grey-2);
+    }
+
+    &__input:hover,
+    &__input:focus {
+        border: 1px solid var(--blue);
+    }
+
+    &__input:focus-visible {
+        outline:2px solid var(--blue);
+        transition: .1s linear;
+    }
+
+    &__label {
+        display: inline-flex;
+        width: 100%;
+        font: 500 12px/18px 'Inter', sans-serif;
+        margin: 0 0 5px;
+        color: var(--grey-3);
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        display: none;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__input_invalid {
+        border: 1px solid var(--red);
+    }
+
+    &__input_invalid ~ &__icon_invalid {
+        display: block;
+    }
+
+    &__input_invalid:focus,
+    &__input_invalid:hover {
+        border: 1px solid var(--red);
+    }
+
+    &__input_success ~ &__icon_success {
+        display: block;
+    }
+
+    &__input_success:focus,
+    &__input_success:hover {
+        border: 1px solid var(--grey-2);
+    }
+}
+

@@ -1,0 +1,16 @@
+.content {
+    background: var(--white-bg);
+    width: inherit;
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    padding: 32px 48px;
+
+    &__title {
+        font-family: Inter, 'sans-serif';
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 24px;
+        color: var(--font-color);
+    }
+}
