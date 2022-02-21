@@ -7,13 +7,15 @@
     column-gap: 30px;
 
     &__item {
-        height: 367px;
-        background: var(--main-bg);
+        position: relative;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
+        flex-direction: column;
         box-shadow: 0 2px 4px rgb(33 36 41 / 5%);
         border-radius: 0.75rem;
+        height: 367px;
+        background: var(--main-bg);
     }
 
     &__title {
@@ -25,8 +27,18 @@
         text-align: center;
         color: var(--font-color);
         margin-bottom: 30px;
+        position: absolute;
+        bottom: 0;
+        text-decoration: none;
     }
 
+    &__content.custom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 
