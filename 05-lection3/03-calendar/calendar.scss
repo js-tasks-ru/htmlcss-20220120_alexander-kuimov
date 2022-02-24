@@ -1,7 +1,8 @@
 .calendar {
     display: flex;
     flex-wrap: wrap;
-    max-width: 304px;
+    max-width: 350px;
+    min-width: 275px;
     padding: 26px 30px 40px;
     border: 1px solid var(--grey-3);
     box-sizing: border-box;

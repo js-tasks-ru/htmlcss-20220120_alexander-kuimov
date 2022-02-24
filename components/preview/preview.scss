@@ -3,17 +3,19 @@
     padding-bottom: 204px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: repeat(2, 375px);
     row-gap: 30px;
     column-gap: 30px;
 
     &__item {
-        height: 367px;
-        background: var(--main-bg);
+        position: relative;
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
         box-shadow: 0 2px 4px rgb(33 36 41 / 5%);
         border-radius: 0.75rem;
+        background: var(--main-bg);
     }
 
     &__title {
@@ -24,9 +26,26 @@
         line-height: 25px;
         text-align: center;
         color: var(--font-color);
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+        position: absolute;
+        bottom: 0;
+        text-decoration: none;
     }
 
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__content_custom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 
